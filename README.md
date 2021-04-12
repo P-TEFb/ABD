@@ -24,9 +24,9 @@ output-file-prefix:        A prefix for the output file.
 number-of-cores:           Total number of cores allocated for this run.
 ```
 ### Requirements
-Python libraries: joblib, glob
+Python libraries: ``` joblib, and glob. ```
 
-Softwares: bedtools (v2.26.0).
+Softwares: ``` bedtools (v2.26.0). ```
 
 If you have over 10,000 intervals, we recommend using 10 cores or higher for faster result.
 
