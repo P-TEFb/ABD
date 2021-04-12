@@ -21,6 +21,11 @@ genome-sequence.fa:        A fasta format file containing whole genome sequence 
 output-file-prefix:        A prefix for the output file.
 
 number-of-cores:           Total number of cores allocated for this run.
+
 ```
+### Requirements
+Python libraries: joblib, glob
+Softwares: bedtools (v2.26.0).
+
 ### Output:
 A table containing the number of times a nucleotide is present at each genomic position across all intervals.
