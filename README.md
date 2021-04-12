@@ -1,5 +1,5 @@
 # ABD
-Creates a table for the number of times a nucleotide (A,T,G and C) is present at each position within a list of genomic intervals of the same size.
+Creates a table for the number of times a nucleotide (A,T,G and C) is present at each position within a specified genomic interval.
 
 Author: Mrutyunjaya Parida, David Price Lab, UIOWA
 
@@ -7,7 +7,6 @@ Author: Mrutyunjaya Parida, David Price Lab, UIOWA
 ABD runs on Python 2.7+ interpreter installed on your desired operating system of choice such as Windows, Mac or Linux. 
 
 ABD program needs 4 mandatory parameters to run as described below.
-
 ```
 python ABD <mapped-fragments.bed> <genome-sequence.fa> <output-file-prefix> <number-of-cores>
 
@@ -33,6 +32,11 @@ If you have over 10,000 intervals, we recommend using 10 cores or higher for fas
 
 If you have 1,000 intervals or less, we recommend using 1 core. 
 
+All intervals should follow the bed format specifications described in https://genome.ucsc.edu/FAQ/FAQformat.html#format1.
+
+Strand must be specified for all intervals. Incase, the strand is unknown please mention "+" in the 6th field of each interval.
+
 Please maintain number of cores should always be lower than the number of intervals queried.
+
 ### Output:
 A table containing the number of times a nucleotide is present at each genomic position across all intervals.
