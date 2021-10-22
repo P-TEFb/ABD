@@ -8,7 +8,7 @@ ABD runs on Python 2.7+ interpreter installed on your desired operating system o
 
 ABD program needs 4 mandatory parameters to run as described below.
 ```
-python ABD <mapped-fragments.bed> <genome-sequence.fa> <output-file-prefix> <number-of-cores>
+python ABD /path-to-file/<mapped-fragments.bed> /path-to-file/<genome-sequence.fa> <output-file-prefix> <number-of-cores>
 
 Example run: python ABD Sample1.deduped.bed /home/xyz-user/genomes/hg38.genome.fa Pol-II 20
 ```
@@ -39,4 +39,4 @@ Strand must be specified for all intervals. Incase, the strand is unknown please
 Please maintain number of cores should always be lower than the number of intervals queried.
 
 ### Output:
-A table containing the number of times a nucleotide is present at each genomic position across all intervals.
+A file at /path-to-file/<output-file-prefix>.totalcount containing a table of the number of times a nucleotide is present at each genomic position across all intervals.
