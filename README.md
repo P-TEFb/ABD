@@ -10,7 +10,7 @@ ABD program needs 4 mandatory parameters to run as described below.
 ```
 python ABD /path-to-file/<mapped-fragments.bed> /path-to-file/<genome-sequence.fa> <output-file-prefix> <number-of-cores>
 
-Example run: python ABD Sample1.deduped.bed /home/xyz-user/genomes/hg38.genome.fa Pol-II 20
+Example run: python ABD /home/xyz-user/mapped/Sample1.deduped.bed /home/xyz-user/genomes/hg38.genome.fa Pol-II 20
 ```
 ### Parameter description:
 ```
@@ -27,6 +27,10 @@ number-of-cores:           Total number of cores allocated for this run.
 Python libraries: ``` joblib, and glob. ```
 
 Softwares: ``` bedtools (v2.26.0). ```
+
+Please provide a whole file path to the program arguement.
+
+Please run one mapped-fragments file at a time for all the intervals.
 
 If you have over 10,000 intervals, we recommend using 10 cores or higher for faster result.
 
